@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+
+    /* fonts to be changed */
+}
+
+.logo{
+    position: absolute;
+    max-width: 8ch;
+    margin-left: 1cm;
+    
+}
+
+
+header ul {
+    /* position: relative; */
+    padding-left: 120px;
+    padding-top: 50px;
+    /* background-color: #333; */
+    height: 100px;
+
+}
+
+header ul li {
+    
+    list-style: none;
+    float: left;
+}
+
+header ul li a {
+    /* display: inline-block; */
+    color: #333;
+    font-weight: 600;
+    font-size: large;
+    /* margin-left: 4px; */
+    text-decoration: none;
+    padding: 0px 20px;
+}
+/* hr {
+    border:none;
+    height: 10px;
+    height: 50px;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px rgb(109, 109, 109);
+  } */
+  
+
+nav{
+      height: 50px;
+      margin-left: 120px;
+  }
+nav a {
+    
+    text-decoration: none;
+    padding: 10px 10px;
+    text-align: center;
+    float: left;
+    color: black;
+    font-weight: 300;
+
+}
+
+.nav2{
+    height: 50px;
+    background-color: #f9f9f9;
+    /* you may change little */ 
+}
+
+.items ul {
+    /* background-color: #333; */
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 100px;
+    list-style: none;
+    }
+.items ul li{
+    /* background-color:rgb(255, 189, 189) ; */
+    /* display: block; */
+    padding: 10px 30px;
+}
+.menu {
+    /* background-color: rgb(255, 208, 208); */
+    /* position: absolute; */
+    margin-top: 20px;
+    margin-left: 480px;
+    list-style: none;
+    display: grid;
+    gap: 1rem 5rem;
+    max-width: 60rem;
+    }
+
+.menu-item {
+    margin-top: 40px;
+    display: grid;
+    gap: 1rem 5rem;
+    max-width: 20rem;
+    font-weight:200;
+
+    }
+.menu-item h4{
+    font-weight: 400;
+}
+.items a{
+    color:inherit;
+    font-weight: 300;
+}
+#p1{
+    display: inline;
+    font-weight:300  ;
+    margin-left: 480px;
+    max-width: 100px;
+
+  /* background-color: rgb(245, 176, 176); */
+}
+#p2{
+    display: inline;
+    font-weight: 400;
+    /* margin-left: 570px; */
+}
+#p3{
+    padding: 5 0;
+    margin-left: 480px;
+    font-weight: 700;
+    font-size:x-large;
+}
+
+.name{
+
+    margin-top: 40px;
+}
+#hr2{
+    margin-top: 20px;
+    margin-left: 480px;
+
+    box-shadow: none;
+    height: 1px;
+    border: rgb(255, 255, 255);
+    background-color: rgb(228, 226, 226); /* Modern Browsers */
+}
+
+
+@media screen and (min-width: 1200px) {
+    .menu{
+      width: 120vw;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .photo {
+      height: 150px;
+    }
+  }
+
+.nav2 hr{
+    box-shadow: none;
+    height: 1px;
+    background-color: #bebebe;
+    border: rgb(168, 28, 28);
+  }
+  hr {
+    box-shadow: 0 0 2px 2px rgb(219, 214, 214);
+  };
+
+
+ 
+  
