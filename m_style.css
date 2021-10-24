@@ -5,18 +5,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    text-decoration: none;
+    text-decoration: none;  
 
     /* fonts to be changed */
 }
 
+body{
+
+    padding-bottom: 10%;
+}
 .logo{
     position: absolute;
     max-width: 8ch;
     margin-left: 1cm;
     
 }
-
 
 header ul {
     /* position: relative; */
@@ -144,6 +147,42 @@ nav a {
     background-color: rgb(228, 226, 226); /* Modern Browsers */
 }
 
+#text-box{
+    /* padding-bottom: 5px; */
+    margin-left: 30%;
+    width: 5%;
+
+}
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;/*I actually had to line this code for it to work properly.*/
+    background-color:rgb(30, 57, 50);    /* clear: both; */
+    height: 10%;
+    padding: 10px 10px 0px 10px;
+}
+#footer-text{
+    margin-left: 30%;
+    font-weight: 500;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:white;
+    font-weight: 700;
+    opacity: 1; /* Firefox */
+    
+  }
+
+
+  .arrow {
+    border: solid rgb(236, 236, 236);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);}
 
 @media screen and (min-width: 1200px) {
     .menu{
@@ -152,7 +191,38 @@ nav a {
     }
     .photo {
       height: 150px;
+      overflow:scroll;
     }
+  }
+  
+  
+  
+  .searchform label, 
+  .searchform input {
+    color: #a1a1a1;
+    /* float: left; */
+    vertical-align: baseline;
+  }
+  
+  /* .searchform label { margin: .125em .125em 0 0; } */
+  
+  .searchform input[type=search] {
+    font: 1em/1.618 Open Sans, Arial, Sans-serif ;
+    border: .100em solid #afafafea;
+    border-width: 0 0 2px;
+    background-color: transparent;
+    /* padding: .1875em 10%; */
+    /* width: 50%; */
+  }
+  
+  /* .searchform input[type=searh]:focus {
+    border-color: #E18728;
+    color: #E18728;
+    outline: 0;
+  } */
+  
+  @media only screen and (min-width: 10%) {
+    .searchform input[type=search]{ width: 40%; }
   }
 
 .nav2 hr{
