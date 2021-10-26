@@ -128,8 +128,10 @@ const lis = [
   const arr=["","Hot Coffees","Hot Drinks","Frappuccino® Blended Beverages","Cold Coffees","Iced Teas","Cold Drinks","Hot Breakfast","Bakery","Lunch","Snacks & Sweets"]
   // get parent element
   const sectionCenter = document.querySelector(".menu");
-   const btnContainer = document.querySelectorAll("li a");
+  const btnContainer = document.querySelectorAll("li a");
 
+
+  
   // display all items when page loads
   window.addEventListener("DOMContentLoaded", function () {
     diplayMenuItems(initial_lis);
@@ -148,6 +150,8 @@ const lis = [
 
         document.getElementById("p2").innerHTML = arr[idd];
         document.getElementById("p3").innerHTML = arr[idd];
+        sessionStorage.setItem("lastLink", idd);
+
         const menuCategory=lis.filter(function(mi){
 
         if (mi.id.toString()=== idd)
@@ -165,14 +169,15 @@ const lis = [
     let displayMenu = menuItems.map(function (item) {
       // console.log(item);
   
-      return `<article class="menu-item">
+      return `<a href ="menu2.html"><article class="menu-item">
             <img src=${item.img} alt=${item.title} class="photo" />
                 <h4>${item.title}</h4>
             </div>
-          </article>`;
+          </article></a>`;
     });
     displayMenu = displayMenu.join("");
     // console.log(displayMenu);
   
     sectionCenter.innerHTML = displayMenu;
+     
   }
